@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lightweight Facebook Poker",
+  "description": "An automatic poking tool for Facebook. You must be on https://www.facebook.com/pokes/ to use this extension",
+  "version": "1.0",
+  "icons": {
+	"128": "poke128.png",
+	"48": "poke48.png"
+  },
+  
+  "background": {
+    "scripts": ["ButtonListener.js"],
+    "persistent": false
+  }, 
+  
+  "page_action": {
+    "default_icon": "iconOff.png",
+    "default_title": "Enable/Disable auto poker"
+  },
+  
+  "permissions": [
+    "activeTab", "declarativeContent", "https://www.facebook.com/pokes/"
+  ]
+}
